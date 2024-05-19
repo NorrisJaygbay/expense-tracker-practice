@@ -115,11 +115,11 @@ addBtn.addEventListener('click', function () {
 //for the expense list view ends
 
     const butt = document.createElement('button');
-    butt.textContent = "Delete";
+    butt.textContent = "Del";
     butt.classList.add('delete');
 
     const butt2 = document.createElement('button');
-    butt2.textContent = "Edit";
+    butt2.textContent = "Edi";
     butt2.classList.add('edit');
 
     const td1 = trall.appendChild(document.createElement('td'));
@@ -164,9 +164,9 @@ expenselistview2.appendChild(elv);
 
 
     butt2.addEventListener('click', () => {
-        if (butt2.textContent.toLowerCase() == "edit") {
-            butt2.textContent = "Save";
-            butt2.classList.add('save');
+        if (butt2.textContent.toLowerCase() == "edi") {
+            butt2.textContent = "Sav";
+            butt2.classList.add('sav');
             butt2.style.backgroundColor = "green";
 
             pain.removeAttribute('readOnly', 'readOnly');
@@ -188,7 +188,7 @@ expenselistview2.appendChild(elv);
             // totalAmountcell.value = totalAmount;
 
         } else {
-            butt2.textContent = "Edit";
+            butt2.textContent = "Edi";
             butt2.style.backgroundColor = "rgb(1, 1, 110)";
             butt2.classList.add('edit');
 
