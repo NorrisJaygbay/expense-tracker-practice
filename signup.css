@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #151515;
+   
+}
+/* for the signup form */
+.signupcont{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: fit-content;
+    margin: auto;
+}
+.signuppara{
+    padding-right: 30px;
+    user-select: none;
+}
+.sp1{
+    /* color: orange; */
+    color: #FFC100;
+    font-weight: bold;
+}
+.fp1{
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    color: #ffffff;
+}
+.fp2{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: orange;
+}
+.fp3{
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.fp4{
+    font-size: .9rem;
+    color: #ffffff;
+}
+.p2{
+    font-size: .9rem;
+}
+.logoimg1{
+    width: 50%;
+    height: 400px;
+}
+.signup2{
+    width: 50%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.img1{
+    width: 470px;
+    height: 470px;
+}
+.img2{
+    width: 300px;
+    height: 200px;
+    margin-top: -45px;
+    margin-bottom: -65px;
+}
+.img3{
+    width: 130%;
+    height: 300px;
+    position: absolute;
+    bottom: -30px;
+    left: -35px;
+    z-index: -5px;
+}
+.signup3{
+    background: #ffffff;
+}
+.signup3{
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px 0px rgb(255, 255, 255);
+    position: relative;
+    border-radius: 10px;
+}
+.allhead{
+    width: fit-content;
+    margin: auto;
+}
+.form1{
+    margin-top: 30px;
+    padding: 0 10px;
+}
+.viewbotton{
+    /* border: 1px solid; */
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+.input1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.input2{
+    width: 100%;
+    font-size: .8rem;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 6px;
+}
+.input3{
+    position: absolute;
+    top: -8px;
+    left: 7px;
+    color: rgb(255, 166, 0);
+    background: #ffffff;
+    font-size: .7rem;
+    padding: 0 2px;
+    font-weight: 600;
+}
+.input4{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    background: orange;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: .2s;
+}
+.input4:hover{
+    background: #d88d02;
+}
+.input4:active{
+    opacity: .6;
+}
+.input5{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+    z-index: 1;
+    margin-top: 20px;
+}
+.line1{
+    width: 40px;
+    height: 3px;
+    background: orange;
+}
+
+.input6{
+    border: none;
+    border-radius: 6px;
+    padding: 7px 12px;
+    background: black;
+    color: #ffffff;
+    font-size: .8rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s;
+}
+.input6:hover{
+    background: rgb(27, 27, 27);
+}
+.input6:active{
+    opacity: .6;
+}
+/* for the signup form ends */
+
+/* for the log in page  */
+.p3{
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+    font-size: .8rem;
+}
+/* for the log in page ends  */
+
+/* for the reset password page */
+.input44{
+    text-decoration: none;
+    color: black;
+}
+/* .p5{
+    font-size: .85rem;
+    color: black;
+    font-weight: 500;
+} */
+.p5{
+    font-size: .82rem;
+    padding: 20px 10px 0 10px; 
+}
+/* for the reset password page ends */
+
+/* for the signup form @media */
+@media all and (max-width:900px){
+    .signup3{
+        width: 400px;
+        height: 500px;
+    }
+}
+@media all and (max-width:840px){
+    .signup3{
+        width: 350px;
+        height: 500px;
+    }
+    .signuppara{
+        padding-right: 20px;
+    }
+}
+@media all and (max-width:770px){
+    .signup3{
+        width: 350px;
+        height: 450px;
+    }
+    .signuppara{
+        padding-right: 20px;
+    }
+    .img2{
+        width: 250px;
+        height: 150px;
+        margin-top: -25px;
+        margin-bottom: -50px;
+    }
+    .form1{
+        margin-top: 20px;
+    }
+    .fp2{
+        font-size: 2.5rem;
+    }
+}
+@media all and (max-width:744px){
+    .signuppara{
+        padding-right: 15px;
+    }
+    .signup3{
+        width: 300px;
+        height: 450px;
+    }
+}
+@media all and (max-width:674px){
+    .signuppara{
+        padding-right: 15px;
+    }
+    .signup3{
+        height: 430px;
+    }
+    .img2{
+        width: 200px;
+        height: 130px;
+        margin-top: -25px;
+        margin-bottom: -45px;
+    }
+    .form1{
+        margin-top: 15px;
+    }
+    .fp2{
+        font-size: 2rem;
+    }
+}
+@media all and (max-width:672px){
+    .signup3{
+        height: 390px;
+    }
+}
+@media all and (max-width:670px){
+    .signupcont{
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .signuppara{
+        padding-right: 0;
+        text-align: center;
+    }
+    .signup2{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .signup3{
+        margin: auto;
+        width: 370px;
+    }
+    .signupcont{
+        padding: 0 20px;
+        height: 100vh;
+        width: 100%;
+    }
+    .p2{
+        font-size: .8rem;
+    }
+    .fp4{
+        display: none;
+    }
+}
+@media all and (max-width:445px){
+    .signup3{
+        width: 320px;
+    }
+}
+@media all and (max-width:391px){
+    .signup3{
+        width: 300px;
+    }
+    }
+@media all and (max-width:351px){
+    .p2{
+        font-size: .72rem;
+    }
+}
+@media all and (max-width:347px){
+    .signup3{
+        width: 270px;
+    }
+    }
+@media all and (max-width:317px){
+    .signup3{
+        width: 250px;
+    }
+}
+
+@media all and (max-width:290px){
+    .signup3{
+        width: 230px;
+        height: 400px;
+    }
+    .p2{
+        font-size: .6rem;
+    }
+    .img2{
+        width: 180px;
+        height: 110px;
+        margin-top: -25px;
+        margin-bottom: -45px;
+    }
+    .input5{
+        margin-top: 10px;
+    }
+}
+/* for the signup form @media ends */

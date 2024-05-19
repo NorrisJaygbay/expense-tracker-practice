@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    height: 100vh;
+    background: #151515;
+    display: flex;
+    align-items: center;
+}
+.graphical{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px #ffffff;
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);
+}
+.graphical1{
+    width: 100%;
+    height: 480px;
+    margin: auto;
+    position: relative;
+    overflow: scroll;
+    position: relative;
+    z-index: 1;
+}
+.img2{
+    width: 210px;
+    height: 130px;
+    position: absolute;
+    top: -25px;
+    left: -20px;
+}
+.img22{
+    width: 210px;
+    height: 120px;
+    display: none;
+}
+.graphical3{
+    width: fit-content;
+    margin: 20px auto;
+}
+.h1{
+    font-size: 1.4rem;
+}
+.line1{
+    width: 80px;
+    height: 2px;
+    background: orange;
+}
+#piechart{
+    width: 900px; 
+   margin: auto;
+}
+.pichart1{
+     background: transparent;
+}
+.img3{
+    position: absolute;
+    width: 500px;
+    bottom: -30px;
+    right: -80px;
+}
+@media all and (max-width:912px){
+    .img22{
+        width: 210px;
+        height: 120px;
+        display: flex;
+        margin: auto;  
+    }
+    .img2{
+        display: none;
+    }
+    .graphical3{
+        margin-top: -30px;
+    }
+}
+@media all and (max-width:600px){
+    #piechart{
+        width: 700px; 
+        height: 300px;
+    }
+}
+@media all and (max-width:558px){
+    .graphical{
+        width: 90%;
+    }
+}
+@media all and (max-width:470px){
+    .h1{
+        font-size: 1.2rem;
+    }
+    .line1{
+        width: 70px;
+        height: 2px;
+    }
+}
+@media all and (max-width:406px){
+    .h1{
+        font-size: 1rem;
+    }
+    .line1{
+        width: 60px;
+        height: 2px;
+    }
+}
+@media all and (max-width:340px){
+    .h1{
+        font-size: .8rem;
+    }
+    .line1{
+        width: 40px;
+        height: 2px;
+    }
+}
+

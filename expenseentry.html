@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Entry Form</title>
+    <link rel="stylesheet" href="expenseentryform.css">
+</head>
+<body>
+   <!-- expense form -->
+   <div class="expensecon expenseform">
+        <div class="expensecon1">
+            <div class="expensecon11">
+                <img src="img2" alt="logoimg" class="img22">
+                <div class="expense1">
+                    <h1 class="h1">Expense Entry Form</h1>
+                    <div class="line1"></div>
+                </div>
+            </div>
+            
+            <div class="input-section">
+                <div class="input-section1 input-section11">
+                    <div class="ione">
+                        <label for="category-select">Categoty:</label>
+                        <select id="category-select" class="in1 category1">
+                            <option value="Food & Water">Food & Water</option>
+                            <option value="Drinks">Drinks</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Free Will">Free Will</option>
+                        </select>
+                    </div>
+                    <div class="ione ione1">
+                        <label for="amount-input">Amount:</label>
+                        <div>
+                            <input type="text" id="amount-input" placeholder="eg: 200" class="in2">
+                            <!-- <select name="" id="" class="in2">
+                                <option value="LRD">LRD</option>
+                                <option value="USD">USD</option>
+                            </select> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="input-section1">
+                    <div class="ione">
+                        <label for="date-input">Date:</label>
+                        <input type="date" id="date-input" class="in3">
+                    </div>
+                    <div class="ione">
+                        <button id="add-btn">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="expenses-list">
+                <!-- <h2>Expense List View</h2> -->
+                <table  class="table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Delete/Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-table-body">
+                        <!-- <tr>
+                            <td>rice</td>
+                            <td>300</td>
+                            <td>20/2/2024</td>
+                            <td>delete</td>
+                        </tr> -->
+                    </tbody>
+                    <tfoot class="tfoot">
+                        <!-- <tr>
+                            <td>Total:</td>
+                            <td class="total-amount"></td>
+                            <td></td>
+                            <td></td>
+                        </tr> -->
+                        <tr>
+                            <td>Total: $:</td>
+                            <td><input type="text" class="total-amount" placeholder="LRD $: 0"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+               <div class="popupcon">
+                    <button class="popupcon1">List View</button>
+                    <button class="popupcon2">Details View </button>
+                    <button class="popupcon3">Budget Setting</button>
+                    <button class="popupcon4"><a href="graphical.html" class="popupcon44">Graphical Rep.</a></button>
+               </div>
+               <div class="yourbudget">
+                <p>Your budget is: $:</p>
+                <input type="text" class="budgetamount" placeholder="0">
+               </div>
+                
+            </div>
+            <img src="img2" alt="logoimg" class="img2">
+        </div>
+        <img src="img3" alt="logoimg" class="img3">
+    </div>
+<!-- expense form ends -->
+
+<!-- expense list view -->
+    <div class="expenselistview">
+        <div class="expenselistview1">
+            <div class="divclose">
+                <button class="exlvclose">X</button>
+            </div>
+            <p class="exlp">Expense List View.</p>
+            <div class="expenselistview2" id="expenselistview2">
+
+            </div>
+        </div>
+    </div>
+<!-- expense list view ends -->
+
+<!-- expense detail view -->
+    <div class="expensedtview">
+        <div class="expensdtview1">
+            <div class="divclose">
+                <button class="exdtclose">X</button>
+            </div>
+            <p class="exlp">Expense Details View.</p>
+            <div class="expenseedtview2" id="expensedtview2">
+
+            </div>
+        </div>
+    </div>
+<!-- expense detail view ends -->
+
+<!-- budget setting interface -->
+
+<div class="budgetsetting">
+    <div class="budgetsetting1">
+        <div class="divclose">
+            <button class="bsclose">X</button>
+        </div>
+        <p class="exlp">Budget Setting View.</p>
+        <div class="budgetsetting2" id="budgetsetting2">
+            <p>Please specify your budget</p>
+            <input type="text" class="inputbu" placeholder="$: 200">
+            <div class="budgetsetting3">
+                <button class="savebu">Save</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- budget setting interface ends -->
+
+
+
+
+
+<script src="expenseentryform.js"></script>
+</body>
+</html>

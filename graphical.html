@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical Representation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="graphical.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Food & Water',     30],
+          ['Drinks',      20],
+          ['Trainsport',  10],
+          ['Free will', 5],
+        //   ['Sleep',    7]
+        ]);
+
+        var options = {
+        //   title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <style>
+        /* #piechart > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > rect:nth-child(2){
+            background: transparent;
+        } */
+        /* #piechart > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > rect:nth-child(2) */
+
+        /* html body div.graphical div.graphical1 div#piechart div div div svg rect */
+
+
+    </style>
+</head>
+<body>
+    <div class="graphical">
+        <div class="graphical1">
+            <div class="graphical2">
+                <img src="img2" alt="logoimg" class="img22">
+                <div class="graphical3">
+                    <h1 class="h1">Graphical Representation Of Expense</h1>
+                    <div class="line1"></div>
+                </div>
+            </div>
+            <div id="piechart" class="pichart1"></div>
+            <img src="img2" alt="logoimg" class="img2">
+        </div>
+        <!-- <img src="../web images/img3" alt="logoimg" class="img3"> -->
+    </div>
+</body>
+</html>
