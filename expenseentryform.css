@@ -622,6 +622,7 @@ tbody tr td{
     }
     .input-section1{
         align-items: normal;
+        flex-direction: column;
     }
     .input-section11{
         display: flex;
@@ -629,6 +630,9 @@ tbody tr td{
         /* border: 2px solid rebeccapurple; */
     }
     .ione1{
+        margin-top: -10px;
+    }
+    .ione2{
         margin-top: -10px;
     }
 }
